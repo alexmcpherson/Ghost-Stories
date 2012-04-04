@@ -18,7 +18,7 @@ This is intended to be run locally for now, so
 
 and hit `lvh.me:9393`
 
-Paste in your API key from Pivotal's Profile page, and drag the new link to your bookmark bar.
+Paste in your API key from [Pivotal's Profile page](https://www.pivotaltracker.com/profile "Profile Page"), and drag the new link to your bookmark bar. If you haven't made an API key before you'll need to click 'generate' to make one.
 
 From any Pivotal project view, click the bookmarklet, and you'll get a download prompt for a nicely formatted, professional PDF file.
 
