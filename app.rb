@@ -12,7 +12,7 @@ get '/to-pdf/:token/:project_id' do
   @stories = doc['stories']
   @style = File.read("config/views/style.css")
 
-  path = "tmp/#{params[:project_id]}.html"
+  path = "output/#{params[:project_id]}.html"
   html = erb :sow
   File.open(path,"w") {|f| f.write(html) }
 
