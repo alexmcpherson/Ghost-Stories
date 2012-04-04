@@ -4,7 +4,7 @@ Ghost Stories
 We write a lot of legal documents that contain Pivotal stories for scoping purposes. This makes generating those brain-dead simple.
 
 ## Setup
-`git clone git@github.com:alexmcpherson/ghost-stories.git`
+`git clone git@github.com:alexmcpherson/Ghost-Stories.git`
 
 `cd ghost-stories`
 
