@@ -1,0 +1,26 @@
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+
+<label>Put your Pivotal Tracker Token in here: </label> <input id='token' type='text'></input> 
+<br />
+<a id="bookmarklet" style='display:none;' href='javascript:console.log("yo");'>PivotalPDF</a>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    var getURL = function(APIKey) {
+      var URL = 'javascript:(function(){if(window.location.href.indexOf("project")<0){alert("Not on a project page");return;}else'+
+        '{var projID=window.location.href.match(/\\d+/);url="http://lvh.me:9393/to-pdf/'+APIKey+'/"+projID;window.open(url,"Download PDF","height=100,width=550")}})();'
+      return URL
+    }
+
+    $("#token").bind('keyup', function(){
+      if ($("#token").val().length > 5) {
+        $("#bookmarklet").show();
+        $("#bookmarklet").attr('href', getURL($(this).val()));
+      }
+    })
+
+  })
+
+</script>
